@@ -141,13 +141,5 @@ Add to your MCP configuration file (`mcp_config.json` or settings):
 - When started, `vylor-mcp` automatically spawns a background thread (`vylor-preindex`) to parse and index the workspace.
 - Indexes are cached locally in `.vylor/` inside the target workspace.
 - Subsequent startups and queries against the warm cache resolve in **under 3 ms**.
-
----
-
-## Testing & Verification
-
-Run the included smoke test to verify all 3 tools end-to-end:
-
-```bash
 python tests/test_smoke.py
 ```
